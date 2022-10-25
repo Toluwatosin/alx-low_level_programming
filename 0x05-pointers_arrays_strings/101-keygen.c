@@ -1,16 +1,30 @@
+#include "holberton.h"
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+
 /**
- *main - functtion to generate p
- *Return: 0
+ * main - check the code for Holberton School students.
+ *
+ * Return: Always 0.
  */
 int main(void)
 {
-	int a;
-	char pass[30];
+  int n;
 
-	for (i = 0; i < 4; i++)
-	pass[3 * i] = '0' + (rand() % 10);
-	printf("generated password : %s\n", pass);
+  n = _atoi("98");
+  printf("%d\n", n);
+  n = _atoi("-402");
+  printf("%d\n", n);
+  n = _atoi("          ------++++++-----+++++--98");
+  printf("%d\n", n);
+  n = _atoi("214748364");
+  printf("%d\n", n);
+  n = _atoi("0");
+  printf("%d\n", n);
+  n = _atoi("Suite 402");
+  printf("%d\n", n);
+  n = _atoi("         +      +    -    -98 Battery Street; San Francisco, CA 94111 - USA             ");
+  printf("%d\n", n);
+  n = _atoi("---++++ -++ Sui - te -   402 #cisfun :)");
+  printf("%d\n", n);
+  return (0);
 }
